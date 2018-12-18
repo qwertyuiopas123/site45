@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About THE Hardware Store</title>
+<link href="StyleSheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<a href="index.html"><img src="Assets/Images/logo.png" style="float:left; width:20%;" alt="Logo"></a>
+<h1 class="g1">THE Hardware Store</h1>
+<h3 class="g1">It's THE Hardware Store!</h3>
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a class="active" herf="about.html">About</a>
+</div>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}	
+</script>
+		<h3 class="g48">Come Vist Us!</h3>
+	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=215%20North%20Ave%20NE%20Atlanta%2C%20Georgia(GA)%2C%2030308&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/webdesign-frankfurt/"></a></div></div>
+<p>215 North Ave NE Atlanta Georgia(GA)</p>
+<h4>Contact:</h4>
+<p>Phone: (964) 502-6186</p>
+<p>E-Mail:theehardwarestore@theehardwarestore.ck</p>
+<div class="navbar">
+	<p class="copyright">&copy; 2018 Handgloves Web Design</p>
+	</div>
+</body>
+</html>

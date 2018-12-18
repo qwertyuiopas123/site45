@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DRILL</title>
+<link href="StyleSheet.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<a href="index.html"><img src="Assets/Images/logo.png" style="float:left; width:20%;" alt="Logo"></a>
+<h1 class="g1">THE Hardware Store</h1>
+<h3 class="g1">It's THE Hardware Store!</h3>
+	<div id="navbar">
+  <a href="index.html">Home</a>
+		  <a href="about.html">About</a>
+</div>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}	
+	
+</script>
+	<div class="g45">
+		<div class="container">
+		<p>This drill is fully functional with a working chuck that holds drill bits well <strong><em>100%</em></strong> of the time and is good at making holes in things. It has a fully rubberized front handle, a variable speed contol, and a locking power switch. </p>
+<br>
+<h3>$60.343 - Base model (low torque)</h3>
+<h3>%105.254 - High Torque Model</h3>	
+<h3>$4,256,766,308,141.567 - "Take Your Arm Off" Torque Model</h3>
+		</div></div>
+	
+	
+	<div class="img-zoom-container">
+  <img id="myimage" src="Assets/Images/cordless-drill.jpg" width="400" height="240" alt="Hammer">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+	<script>
+	function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  /* Create lens: */
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  /* Insert lens: */
+  img.parentElement.insertBefore(lens, img);
+  /* Calculate the ratio between result DIV and lens: */
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  /* Set background properties for the result DIV */
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  /* Execute a function when someone moves the cursor over the image, or the lens: */
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  /* And also for touch screens: */
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    /* Calculate the position of the lens: */
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /* Prevent the lens from being positioned outside the image: */
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    /* Set the position of the lens: */
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    /* Display what the lens "sees": */
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+		imageZoom("myimage", "myresult"); 
+	</script>
+
+	<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.125 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-52"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>90</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-42"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>123</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-32"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>28</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-22"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>9</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-12"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>4</div>
+  </div>
+</div>
+	<div class="container">
+  <img src="Assets/Images/bandmember.jpg" alt="Avatar" style="width:90px">
+  <p><span>Rick Ritter</span></p>
+  <p>Good drill, but the base model isn't worth your money</p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</div>
+
+<div class="container">
+  <img src="Assets/Images/avatar_g2.jpg" alt="Avatar" style="width:90px">
+  <p><span >Tori Driscoll</span></p>
+  <p>Holds bits decently.</p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star checked"></span>
+</div>
+<div class="container">
+  <img src="Assets/Images/img_avatar2.png" alt="Avatar" style="width:90px">
+  <p><span>Teri Stafford</span></p>
+  <p>It don't do a work.</p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+<div class="container">
+  <img src="Assets/Images/bandmember.jpg" alt="Avatar" style="width:90px">
+  <p><span >Tim Cook</span></p>
+  <p>Was unsatsifed with the "Take Your Arm Off" model. Diden't remove arm when bit stalled.</p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+	
+<h2>You May Also Be Intersted In</h2>
+	<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td><a href="hammer.html">
+	<div class="card">
+  <img src="Assets/Images/hammer2.png" alt="HAMMER" style="width:100%">
+  <div class="container">
+    <h4><b>HAMMER</b></h4> 
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+		</div></div></a></td>
+      <td><a href="drill.html">
+	<div class="card">
+  <img src="Assets/Images/nails.jpg" alt="NAILS" style="width:100%">
+  <div class="container">
+    <h4><b>NAIL</b></h4> 
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span> 
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+		</div></div></a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="topnav">
+	<p class="copyright">&copy; 2018 Handgloves Web Design</p>
+	</div>
+	
+	
+</body>
+</html>
